@@ -3,7 +3,6 @@ from flask_mail import Mail, Message
 from flask_sqlalchemy import SQLAlchemy
 
 import os
-from flask import Flask, render_template
 
 app = Flask(__name__)
 
