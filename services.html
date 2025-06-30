@@ -1,1 +1,27 @@
-<h1>Services Page (Placeholder)</h1>
+{% extends "base.html" %}
+
+{% block title %}Our Services | First Point 24{% endblock %}
+
+{% block content %}
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>24/7 Care</h3>
+        <p>Professional and consistent care available anytime you need it.</p>
+      </div>
+      <div class="card">
+        <h3>Mental Health</h3>
+        <p>Compassionate support tailored to emotional and psychological well-being.</p>
+      </div>
+      <div class="card">
+        <h3>Condition-Led Care</h3>
+        <p>Specialised care plans based on individual medical needs and conditions.</p>
+      </div>
+      <div class="card">
+        <h3>Palliative</h3>
+        <p>Comfort-focused care to support patients and families during challenging times.</p>
+      </div>
+    </div>
+  </section>
+{% endblock %}
