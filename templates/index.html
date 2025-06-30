@@ -1,17 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>First Point 24</title>
-    <link rel="stylesheet" href="/static/style.css">
-</head>
-<body>
-    <h1>Welcome to First Point 24</h1>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/services">Services</a>
-        <a href="/team">Team</a>
-        <a href="/contact">Contact</a>
-    </nav>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Home | First Point 24{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero-text">
+    <h2>Patient-Centred<br>24/7 Care</h2>
+    <a href="/contact" class="btn">Book Assessment</a>
+  </div>
+  <div class="hero-image">
+    <img src="{{ url_for('static', filename='images/hero.jpg') }}" alt="Nurse and patient">
+  </div>
+</section>
+
+<section class="quick-actions">
+  <button>🔍 Find a Nurse</button>
+  <button>📅 Book Home Visit</button>
+</section>
+
+<section class="how-it-works">
+  <h3>How It Works</h3>
+  <div class="steps">
+    <div class="step"><h4>01</h4><p>Call Us</p></div>
+    <div class="step"><h4>02</h4><p>In-Home Assessment</p></div>
+    <div class="step"><h4>03</h4><p>Receive Care</p></div>
+  </div>
+</section>
+
+<section class="services-preview">
+  <h3>Our Services</h3>
+  <div class="cards">
+    <div class="card">24/7 Care</div>
+    <div class="card">Mental Health</div>
+    <div class="card">Condition-Led Care</div>
+    <div class="card">Palliative</div>
+  </div>
+</section>
+
+<section class="team-preview">
+  <h3>Meet the Team</h3>
+  <div class="team-images">
+    <!-- You’ll add actual staff photos here -->
+    <div class="profile"></div>
+    <div class="profile"></div>
+    <div class="profile"></div>
+  </div>
+</section>
+{% endblock %}
