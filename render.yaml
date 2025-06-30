@@ -1,0 +1,7 @@
+
+services:
+  - type: web
+    name: first-point-24
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
